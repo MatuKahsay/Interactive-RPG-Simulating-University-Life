@@ -3,9 +3,14 @@
  > Prompt text is any lines beginning with "\>"
  > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
 # \<Project title\>
+Average Life of a UCR student
  > Your author list below should include links to all members GitHub (remove existing author).
  
- > Authors: \<[Jeffrey McDaniel](https://github.com/jmcda001)\>
+ > Authors:
+Alexander Dobmeier, https://github.com/zanderdo
+Stefan Vo, https://github.com/Stefan-Vo
+Jared Banzuela: https://github.com/JaredBanzuela 
+Matusala Kahsay: https://github.com/matu-kahsay
 
  > You will be forming a group of **FOUR** students and working on an interesting project. The project has 4 phases, each one with specific requirements. A list of proposed project ideas that have been successful in previous quarters is listed in the project specifications document on Canvas. You can select an idea from the list and start thinking about the features you will implement. If you want to propose your own original idea, you will have to contact your instructor to discuss the project and obtain written permission before you submit your project proposal (Phase 1). The project work should be divided almost equally among team members. You can of course help each other, but it needs to be clear who will be responsible for which features. Additionally, you are expected to follow Scrum patterns, specifically the use of a Scrum (Project) board, Sprints, and Scrum meetings.
 
@@ -17,11 +22,63 @@
 > * All project phases are to be submitted to this GitHub repository. You should modify this README file to reflect the different phases of the project. In addition, you should regularly hold sprint meetings with your group. You will need to hold two to three scrum/check-in meetings with your lab TA/reader at different times in addition to the final demo.
 
 ## Project Description
+RPG that simulates the average day in the life of a UCR student. We will be implementing a GUI in which the user can interact with. It consists of various buttons and a text input section. The game allows you to choose your gender, school year, major and other characteristics in order to add variability in the game. This game also has a skill point system, where the major you choose impacts the amount of skill in a certain area ie..(intelligence, charisma, strength).This project will include pictures, scenarios, and many other aspects of life at UCR. Throughout the game the player will face various challenges that may hinder or deter you from accomplishing several key tasks. By completing these tasks it brings you closer to the goal of the game, which is to graduate successfully. 
  > Your project description should summarize the project you are proposing. Be sure to include:
  > * Why is it important or interesting to you?
+ > This project is important to us as it depicts the issue we face as UCR students. On the technical side, this project interests us as game development is a field that we naturally gravitated towards when deciding on a project idea and what better way to step our foot in the door of game development with a text based RPG game that will use a UI software. It is important that we learn the skills of creating a text based RPG game because we understand that the best way to get a sense of the environment of the computer science industry is to develop a complex software with multiple individuals in order to gauge the difficulty and necessary skills to be successful as a team.
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
+ > C++
+Git
+Github
+VSCode
+CMake
+Google test Framework
+Photoshop
+Unreal Engine
+
  > * What will be the input/output of your project?
+ > The input will primarily be in the form of the user pressing buttons on the GUI to indicate what choices they would like to pick.  The output will be in the form of text and pictures of the UCR campus that give the player new options that will progress them through the game.
  > * What are the features that the project provides?
+ > 
+ > Stats (determined by the major the player chooses at the beginning of the game):
+Strength
+Charisma
+Intelligence
+Stamina
+Health (starts at 100)
+
+Options:
+Talk
+Run
+Fight
+Think
+
+Talk:
+When talk is chosen, a skill check on charisma is performed.  If the player passes they get by the obstacle, if not something negative happens (Lose health, go into fight or run, lose inventory item, etc.).  If your charisma is high enough, you can even get an item from the enemy,
+
+Run:
+When run is chosen, a skill check on stamina is performed.  If the player passes they get by the obstacle, if not something negative happens (Lose health, go into fight or run, lose inventory item, etc.)  Higher chance of going into fight if failed.
+
+Fight:
+When fight is selected, the game enters a simulation of the fight.  Computer picks between a few random attacks for both the player and enemy that do varying amounts of damage.  Higher strength means more damage.  Higher stealth means higher chance to dodge an attack.  Intelligence boosts the chance of a critical hit that does more damage than normal.  Computer can decide to “insult” the enemy.  Insult decreases the damage the enemy does and a higher charisma stat means more reduction in damage that the enemy can do.  Your health at the end of the fight becomes your new health.  If you win, the defeated enemy drops an item.
+
+Think:
+When think is selected, a skill check on is ran on intelligence.  If it passes, the player gets a boost or the enemy gets a debuff in either of the other options.  If it fails, the player is forced into a fight and the enemy gets a free hit.
+
+After passing an enemy
+After passing an enemy, certain stats are increased based on the choices that the player made.
+
+
+In-Between Story Choices:
+Go to the Gym (increases strength)
+Go to a party (increase charisma)
+Study at the Library (increases intelligence)
+Eat food (increase stamina)
+Go to the hospital (Restore health 50-60 pts)
+
+Inventory System:
+Stores items that the player can use to help them.  If the player has an item they can use when they encounter an enemy, there is an additional button to use that item and a brief description of what it will do.
+
  > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
  > 
  > You also need to set up an empty project board using GitHub projects (board view). Make sure you add the board under your project repository. You should also have a Product Backlog and In testing columns added.
