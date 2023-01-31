@@ -2,31 +2,22 @@
  > As you complete each section you **must** remove the prompt text. Every *turnin* of this project includes points for formatting of this README so keep it clean and keep it up to date. 
  > Prompt text is any lines beginning with "\>"
  > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
-# \<Average Life of a UCR student\>
+# Average Life of a UCR student
  > Your author list below should include links to all members GitHub (remove existing author).
  
- > Authors:
+Authors:
 Alexander Dobmeier, https://github.com/zanderdo
 Stefan Vo, https://github.com/Stefan-Vo
 Jared Banzuela: https://github.com/JaredBanzuela 
 Matusala Kahsay: https://github.com/matu-kahsay
 
- > You will be forming a group of **FOUR** students and working on an interesting project. The project has 4 phases, each one with specific requirements. A list of proposed project ideas that have been successful in previous quarters is listed in the project specifications document on Canvas. You can select an idea from the list and start thinking about the features you will implement. If you want to propose your own original idea, you will have to contact your instructor to discuss the project and obtain written permission before you submit your project proposal (Phase 1). The project work should be divided almost equally among team members. You can of course help each other, but it needs to be clear who will be responsible for which features. Additionally, you are expected to follow Scrum patterns, specifically the use of a Scrum (Project) board, Sprints, and Scrum meetings.
-
- > ## Expectations
- > * The backend of your project should be implemented in C++. If you wish to choose anoher programming language (e.g. Java, Python), please discuss with your lab TA to obtain permission.
- > * You can incorporate additional technologies/tools but they must be approved (in writing) by the instructor or the TA.
- > * Each member of the group **must** be committing code regularly and make sure their code is correctly attributed to them. We will be checking attributions to determine if there was equal contribution to the project.
- > * **Each member of the group must actively participate in the Github Project board, writing unit tests, and reviewing commited code.**
-> * All project phases are to be submitted to this GitHub repository. You should modify this README file to reflect the different phases of the project. In addition, you should regularly hold sprint meetings with your group. You will need to hold two to three scrum/check-in meetings with your lab TA/reader at different times in addition to the final demo.
-
 ## Project Description
 RPG that simulates the average day in the life of a UCR student. We will be implementing a GUI in which the user can interact with. It consists of various buttons and a text input section. The game allows you to choose your gender, school year, major and other characteristics in order to add variability in the game. This game also has a skill point system, where the major you choose impacts the amount of skill in a certain area ie..(intelligence, charisma, strength).This project will include pictures, scenarios, and many other aspects of life at UCR. Throughout the game the player will face various challenges that may hinder or deter you from accomplishing several key tasks. By completing these tasks it brings you closer to the goal of the game, which is to graduate successfully. 
- > Your project description should summarize the project you are proposing. Be sure to include:
- > * Why is it important or interesting to you?
+
+Why is it interesting to us?
  > This project is important to us as it depicts the issue we face as UCR students. On the technical side, this project interests us as game development is a field that we naturally gravitated towards when deciding on a project idea and what better way to step our foot in the door of game development with a text based RPG game that will use a UI software. It is important that we learn the skills of creating a text based RPG game because we understand that the best way to get a sense of the environment of the computer science industry is to develop a complex software with multiple individuals in order to gauge the difficulty and necessary skills to be successful as a team.
- > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- > C++
+languages/tools/technologies we plan to use
+C++
 Git
 Github
 VSCode
@@ -35,11 +26,10 @@ Google test Framework
 Photoshop
 Unreal Engine
 
- > * What will be the input/output of your project?
- > The input will primarily be in the form of the user pressing buttons on the GUI to indicate what choices they would like to pick.  The output will be in the form of text and pictures of the UCR campus that give the player new options that will progress them through the game.
- > * What are the features that the project provides?
- > 
- > Stats (determined by the major the player chooses at the beginning of the game):
+input/output of our project:
+The input will primarily be in the form of the user pressing buttons on the GUI to indicate what choices they would like to pick.  The output will be in the form of text and pictures of the UCR campus that give the player new options that will progress them through the game.
+Features:
+Stats (determined by the major the player chooses at the beginning of the game):
 Strength
 Charisma
 Intelligence
@@ -78,9 +68,6 @@ Go to the hospital (Restore health 50-60 pts)
 Inventory System:
 Stores items that the player can use to help them.  If the player has an item they can use when they encounter an enemy, there is an additional button to use that item and a brief description of what it will do.
 
- > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
- > 
- > You also need to set up an empty project board using GitHub projects (board view). Make sure you add the board under your project repository. You should also have a Product Backlog and In testing columns added.
  > ## Phase II
  > In addition to completing the "Class Diagram" section below, you will need to:
  > * Create an "Epic" (note) for each feature. Place these epics in the `Product Backlog` column
