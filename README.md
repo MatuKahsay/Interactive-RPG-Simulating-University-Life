@@ -1,9 +1,6 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9905812&assignment_repo_type=AssignmentRepo)
  > As you complete each section you **must** remove the prompt text. Every *turnin* of this project includes points for formatting of this README so keep it clean and keep it up to date. 
- > Prompt text is any lines beginning with "\>"
- > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
 # Average Life of a UCR student
- > Your author list below should include links to all members GitHub (remove existing author).
  
 Authors:
 Alexander Dobmeier, https://github.com/zanderdo
@@ -15,7 +12,7 @@ Matusala Kahsay: https://github.com/matu-kahsay
 RPG that simulates the average day in the life of a UCR student. We will be implementing a GUI in which the user can interact with. It consists of various buttons and a text input section. The game allows you to choose your gender, school year, major and other characteristics in order to add variability in the game. This game also has a skill point system, where the major you choose impacts the amount of skill in a certain area ie..(intelligence, charisma, strength).This project will include pictures, scenarios, and many other aspects of life at UCR. Throughout the game the player will face various challenges that may hinder or deter you from accomplishing several key tasks. By completing these tasks it brings you closer to the goal of the game, which is to graduate successfully. 
 
 Why is it interesting to us?
- > This project is important to us as it depicts the issue we face as UCR students. On the technical side, this project interests us as game development is a field that we naturally gravitated towards when deciding on a project idea and what better way to step our foot in the door of game development with a text based RPG game that will use a UI software. It is important that we learn the skills of creating a text based RPG game because we understand that the best way to get a sense of the environment of the computer science industry is to develop a complex software with multiple individuals in order to gauge the difficulty and necessary skills to be successful as a team.
+This project is important to us as it depicts the issue we face as UCR students. On the technical side, this project interests us as game development is a field that we naturally gravitated towards when deciding on a project idea and what better way to step our foot in the door of game development with a text based RPG game that will use a UI software. It is important that we learn the skills of creating a text based RPG game because we understand that the best way to get a sense of the environment of the computer science industry is to develop a complex software with multiple individuals in order to gauge the difficulty and necessary skills to be successful as a team.
 languages/tools/technologies we plan to use
 C++
 Git
@@ -69,19 +66,45 @@ Inventory System:
 Stores items that the player can use to help them.  If the player has an item they can use when they encounter an enemy, there is an additional button to use that item and a brief description of what it will do.
 
  > ## Phase II
- > In addition to completing the "Class Diagram" section below, you will need to:
- > * Create an "Epic" (note) for each feature. Place these epics in the `Product Backlog` column
- > * Complete your first *sprint planning* meeting to plan out the next 7 days of work.
- >   * Break down the "Epics" into smaller actionable user stories (i.e. smaller development tasks). Convert them into issues and assign them to team members. Place these in the `TODO` column.
- >   * These cards should represent roughly 7 days worth of development time for your team. Then, once the sprint is over you should be repeating these steps to plan a new sprint, taking you until your second scrum meeting with the reader in phase III.
- > * Schedule two check-ins using Calendly. You need to pick both time slots during your lab on week 6. Your entire team must be present for both check-ins.
- >   * The first check-in needs to be scheduled with your lab TA. During that meeting, you will discuss your project design/class diagram from phase II.
- >   * The second check-in should be scheduled with a reader. During that meeting you will discuss:
- >     * The tasks you are planning for the first sprint
- >     * How work will be divided between the team members
-## Class Diagram
- > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
- 
+ ![CS100 UML diagram](https://user-images.githubusercontent.com/122512856/218392411-2e93ab59-b241-44b7-bb74-5139813f1fd5.png)
+
+Game Logic:
+Game Logic contains a list of all scenes in the game and navigates through them based on the player input.  Game logic also initializes the game (enemies, scenes, player stats, etc.) when the game is launched.
+
+Scene:
+Scene contains all of the information on a specific scene (type, options, pictures, etc).
+
+Action:
+Action contains all of the functions for the decisions the player can make by using the buttons.
+
+Inventory:
+Inventory contains a vector with all of the items that the player has picked up.  It also can add or remove items from the player’s inventory.
+
+Item:
+Item contains the ID of the specific item in the inventory and it’s name and picture.  
+
+Strengther:
+A type of item that can be used in combat. It increases the player’s strength.
+
+Healer:
+A type of item that restores the player’s Health
+
+Learner:
+A type of item that increases the player’s intelligence
+
+Charismer:
+A type of item that increases the player’s charisma.
+
+Display:
+Displays images and text to the terminal for the player to interact with the game. It can display characters, backgrounds, text, items, difficulty, and options.
+
+Enemy:
+A class that contains the health, damage, strength, and difficulty of an enemy the player might face. An enemy can attack, take damage, or drop items. Its difficulty can also be viewed.
+
+Player:
+The player class will contain all of the information of the player. That starts with first choosing the type of player based upon their major. This will initialize the attributes of the player from their health score, strength, intelligence, stamina, and charisma. The functions of the class will be getMajor for user input of desired major choice and getStats/setStat in order to initialize and keep track of the player stats. 
+
+
  > ## Phase III
  > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
  
