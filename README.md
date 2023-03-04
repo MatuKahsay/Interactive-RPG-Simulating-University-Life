@@ -114,6 +114,8 @@ The player class will contain all of the information of the player. That starts 
  **2.** Action class implemented so classes are more focused on maintaing and executing one task. Classes are now more specific and responsible for more individual tasks. This was implemented using the Single Responsibility Principle, we saw that the original Action/Character class had too many repsonsbilities so we made new classes and split the responbilities up for the classes. We now have classes responsible for maintaing data and classes to output data. 
  
 **3** Stats class was implemented with the Single Responsbility Principle so that classes are less cluttered and each class are implemented with the idea of having one responsbility. This change of creating a Stats Class provides less confusion in what each Class is responsbile for.  
+
+**4** Updated the Scene and Display classes to be more representative of the actual ImGui implementation and obey the single responsibility principle of the SOLID principles.  Scene will store all text, pictures, and button text that Display will have to display for a specific scene.  Display now has an Init(), Render(), and Shutdown() function which all use ImGui to display the scenes.  The UpdateXXX() functions will tell ImGui exactly what it needs to display 
  
  
  
