@@ -1,0 +1,5 @@
+C:/Users/Alex/Desktop/Alex/School/CS100/Average life of a UCR student/VS2022attempt/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/Alex/Desktop/Alex/School/CS100/Average life of a UCR student/VS2022attempt/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Alex/Desktop/Alex/School/CS100/Average life of a UCR student/VS2022attempt/out/build/x64-debug/VS2022attempt/CMakeFiles/ImGuiExample.dir
+C:/Users/Alex/Desktop/Alex/School/CS100/Average life of a UCR student/VS2022attempt/out/build/x64-debug/VS2022attempt/CMakeFiles/edit_cache.dir
+C:/Users/Alex/Desktop/Alex/School/CS100/Average life of a UCR student/VS2022attempt/out/build/x64-debug/VS2022attempt/CMakeFiles/rebuild_cache.dir

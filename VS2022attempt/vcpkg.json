@@ -1,0 +1,12 @@
+{
+  "dependencies": [
+    {
+      "name": "imgui",
+      "features": [ "glfw-binding", "openg13-binding" ]
+    },
+    "glfw3",
+    "glad"
+  ],
+  "name": "imguiexample",
+  "version": "1.0"
+}

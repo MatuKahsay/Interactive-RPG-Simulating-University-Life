@@ -1,0 +1,9 @@
+# ninja log v5
+2	102	6998788741493957	build.ninja	9f744185e4412723
+8	57	6997744983776248	VS2022attempt/CMakeFiles/ImGuiExample.dir/UseImGui.cpp.obj	a3a5d483878d839f
+7	65	6997745759064088	VS2022attempt/CMakeFiles/ImGuiExample.dir/ImGuiExample.cpp.obj	65a3160815dafab3
+66	146	6997745759674096	VS2022attempt/ImGuiExample.exe	dc41b6ca55cfac17
+4	9	0	clean	8c45b54705a541e8
+21	128	7003848743822714	VS2022attempt/CMakeFiles/ImGuiExample.dir/UseImGui.cpp.obj	98f290fe25242dce
+15	128	7003848743822714	VS2022attempt/CMakeFiles/ImGuiExample.dir/ImGuiExample.cpp.obj	6d08c4db2d6df2e6
+128	253	7003848744792614	VS2022attempt/ImGuiExample.exe	2ca57229443bb1ea
