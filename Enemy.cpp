@@ -13,12 +13,21 @@ Enemy::Enemy(const Stats& stat, int ID){
 
 void Enemy::equipItem(Item& item) {
     enemyStats.setHealth(enemyStats.getHealth() + item.getStats().getHealth());
+    enemyStats.setIntelligence(enemyStats.getIntelligence() + item.getStats().getIntelligence());
+    enemyStats.setStrength(enemyStats.getStrength() + item.getStats().getStrength());
+    enemyStats.setStamina(enemyStats.getStamina() + item.getStats().getStamina());
+    enemyStats.setCharisma(enemyStats.getCharisma() + item.getStats().getCharisma());
 
 }
 
 void Enemy::unequipItem(Item& item){
     enemyStats.setHealth(enemyStats.getHealth() - item.getStats().getHealth());
+    enemyStats.setIntelligence(enemyStats.getIntelligence() - item.getStats().getIntelligence());
+    enemyStats.setStrength(enemyStats.getStrength() - item.getStats().getStrength());
+    enemyStats.setStamina(enemyStats.getStamina() - item.getStats().getStamina());
+    enemyStats.setCharisma(enemyStats.getCharisma() - item.getStats().getCharisma());
 }
+
 
 
 void Enemy::attack(){
