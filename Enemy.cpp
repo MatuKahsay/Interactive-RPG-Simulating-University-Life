@@ -1,4 +1,8 @@
 #include "Enemy.h"
+//#include "Player.h"
+#include "item.h"
+#include <iostream>
+
 
 
 Enemy::Enemy(const Stats& stat, int ID){
@@ -7,21 +11,40 @@ Enemy::Enemy(const Stats& stat, int ID){
 
 }
 
+void Enemy::equipItem(Item& item) {
+    enemyStats.setHealth(enemyStats.getHealth() + item.getStats().getHealth());
+
+}
+
+void Enemy::unequipItem(Item& item){
+    enemyStats.setHealth(enemyStats.getHealth() - item.getStats().getHealth());
+}
+
+
 void Enemy::attack(){
-    enemyStats.getStrength();
-
+    std::cout << "Attack Start: \n";
+    // enemyStats.getStrength();
+    
 }
 
-int Enemy::getStrength(const Stats& enemyStat){
-    enemyStat.getStrength();
-}
+/*void Enemy::battle(Player& player, Enemy& enemy){
+    int baseAttack = 0;
+    while(enemy.getStats().getHealth() > 0){
+        std:: cout << "Testing";
+    }
+}*/
 
-int Enemy::getHealth(const Stats& enemyStat){
-    enemyStat.getHealth();
-}
 
-
-const Stats& Enemy::getStats() const {
+Stats& Enemy::getStats() {
     return enemyStats;
 }
 
+void Enemy::printStats(){
+    std::cout << "Enemy Health: " << enemyStats.getHealth() << "\n";
+    std::cout << "Enemy Strength: " << enemyStats.getStrength()<< "\n";
+    std::cout << "Enemy Intelligence: " << enemyStats.getIntelligence()<< "\n";
+    std::cout << "Enemy Charisma: " << enemyStats.getCharisma()<< "\n";
+    std::cout << "Enemy Stamina: " << enemyStats.getStamina()<< "\n";
+    
+
+}
