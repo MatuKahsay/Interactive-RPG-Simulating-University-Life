@@ -22,8 +22,6 @@ void UseImGui::Update()	{
 	ImGui::Begin("Da Window");
 	ImGui::Button("AAAAAAAAA");
 	ImGui::End();
-
-
 }
 
 void UseImGui::Render()	{
