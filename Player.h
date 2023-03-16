@@ -2,12 +2,13 @@
 #define PLAYER_H
 #include <iostream>
 #include "Stats.h"
+#include "Combat.h"
 
 
 
 using namespace std;
 
-class Player {
+class Player : public Combat {
 
     private:
     string major;
@@ -18,7 +19,7 @@ class Player {
     void setMajor(string major);
     void setStats(Stats &playerStats);
     void showStats(Stats &playerStats);
-    void attack(Stats &playerStats, Stats &enemyStats);
+    virtual void attack(Stats &playerStats, Stats &enemyStats);
 
 
     

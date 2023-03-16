@@ -69,9 +69,7 @@ void Player::attack(Stats &playerStats, Stats &enemyStats) {
     int baseAttack = 7, hitAmount = 0, enemyHealth = 0, prob = 0;
 
     if(playerStats.getStrength() < 20) {
-        // random_device rd;
-
-        // uniform_int_distribution<int> dist(1,3);
+ 
 
         prob = 1;
 
@@ -93,16 +91,7 @@ void Player::attack(Stats &playerStats, Stats &enemyStats) {
 
             enemyStats.setHealth(enemyHealth);
         }
-        // else {
-            
-        //     int hitAmount = prob * baseAttack;
 
-        //     cout << "You did " << hitAmount << " damage. ";
-
-        //     enemyHealth = enemyStats.getHealth() - hitAmount;
-
-        //     enemyStats.setHealth(enemyHealth);
-        // }
     }
     else if((playerStats.getStrength() >= 20) && (playerStats.getStrength() <= 29)) {
         
