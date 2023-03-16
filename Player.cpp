@@ -226,7 +226,7 @@ void Player::attack(Stats &playerStats, Stats &enemyStats) {
 
 }
 
-void Player::equipItem(Stats &playerStats, Item& item, Inventory & itemInv) {
+void Player::equipItem(Stats &playerStats, Item& item) {
     playerStats.setHealth(playerStats.getHealth() + item.getStats().getHealth());
     playerStats.setIntelligence(playerStats.getIntelligence() + item.getStats().getIntelligence());
     playerStats.setStrength(playerStats.getStrength() + item.getStats().getStrength());
