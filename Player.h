@@ -16,13 +16,15 @@ class Player: public Character{
     int charisma;
 
     public:
+    Player();
     Player(int health,  int strength, int intelligence, int stamina, int charisma, string major);
     string getMajor();
     void setMajor(string major);
-    void setStats();
-
-    
-
-
+    void setStats(Player* &player);
+    int getHealth();
+    int getStrength();
+    int getIntelligence();
+    int getStamina();
+    int getCharisma();
 };
 #endif

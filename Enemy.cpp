@@ -34,6 +34,12 @@ void Enemy::attack(){
     std::cout << "Attack Start: \n";
     // enemyStats.getStrength();
     
+int Enemy::getStrength(Stats& enemyStat){
+    return enemyStat.getStrength();
+}
+
+int Enemy::getHealth(Stats& enemyStat){
+    return enemyStat.getHealth();
 }
 
 /*void Enemy::battle(Player& player, Enemy& enemy){

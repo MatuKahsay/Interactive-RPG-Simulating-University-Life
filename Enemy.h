@@ -22,6 +22,9 @@ class Enemy{
         Stats& getStats();  
         void printStats();
         // void battle(Player& player, Enemy& enemy);
+        int getStrength(Stats& stats);
+        int getHealth(Stats& stats);
+        const Stats& getStats() const;  
 
 };
 
