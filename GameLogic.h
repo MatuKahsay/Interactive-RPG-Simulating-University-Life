@@ -1,27 +1,27 @@
 #ifndef GAMELOGIC_H
 #define GAMELOGIC_H
 #include <vector>
-#include "Scene.h"
+#include "scene.h"
 #include "Player.h"
 
 using namespace std;
-using namespace scene;
-using namespace player;
 
 class GameLogic  {
     private:
-        vector<Scene*> sceneList;
+        vector<scene*> sceneList;
         Player Protagonist;
+        scene* currScene;
     public:
         GameLogic();
-        GameLogic(vector<Scene*> newList, Player newPlayer);
+        GameLogic(vector<scene*> newList, Player newPlayer);
         ~GameLogic();
-        void addScene(Scene* newScene);
+        void addScene(string sceneType, vector<string> Buttons, string pictureDir, string difficulty, string text1, string text2, string text3);
         void removeScene(int);
-        void playScenes();
         void initialize();
         void clearScenes();
-        Scene* getScene(int);
+        scene* getScene(int);
+        scene* getCurrScene();
+        void setCurrScene(int tarScene);
 };
 
 #endif

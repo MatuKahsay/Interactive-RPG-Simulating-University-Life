@@ -12,8 +12,8 @@ class Enemy{
     public: 
         Enemy(const Stats& stat, int ID); 
         void attack();
-        int getStrength(const Stats& stats);
-        int getHealth(const Stats& stats);
+        int getStrength(Stats& stats);
+        int getHealth(Stats& stats);
         const Stats& getStats() const;  
 
 };
