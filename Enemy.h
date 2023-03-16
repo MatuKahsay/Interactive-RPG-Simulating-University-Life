@@ -1,36 +1,21 @@
 #ifndef ENEMY_H
 #define ENEMY_H
-#include "stats.h"
-#include "item.h"
-// #include "Player.h"
-
-#include <iostream>
+#include "Stats.h"
 
 
-class Enemy{
+class Enemy {
 
     private:
-        int enemyID; 
-        int health;
-        Stats enemyStats; 
+    int difficulty;
 
-    public: 
-        Enemy(const Stats& stat, int ID); 
-        void equipItem(Item& item);
-        void unequipItem(Item& item);
-        void attack();
-        Stats& getStats();  
-        void printStats();
-        // void battle(Player& player, Enemy& enemy);
-        int getStrength(Stats& stats);
-        int getHealth(Stats& stats);
-        const Stats& getStats() const;  
+    public:
+        Enemy();
+        int getDiff();
+        void setDiff(int enemyDiff);
+        void setStats(Stats &enemyStats);
+        void showStats(Stats &enemyStats);
+        void attack(Stats &playerStats, Stats &enemyStats);
+
 
 };
-
-
-
-
-
-
-#endif 
+#endif

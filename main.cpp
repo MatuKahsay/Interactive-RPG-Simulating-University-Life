@@ -1,3 +1,4 @@
+
 // VS2022attempt.cpp : Defines the entry point for the application.
 //
 #include <vector>
@@ -18,9 +19,6 @@
 
 
 using namespace std;
-
-
-
 
 
 int main()
