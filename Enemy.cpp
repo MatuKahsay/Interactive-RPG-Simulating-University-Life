@@ -12,12 +12,12 @@ void Enemy::attack(){
 
 }
 
-int Enemy::getStrength(const Stats& enemyStat){
-    enemyStat.getStrength();
+int Enemy::getStrength(Stats& enemyStat){
+    return enemyStat.getStrength();
 }
 
-int Enemy::getHealth(const Stats& enemyStat){
-    enemyStat.getHealth();
+int Enemy::getHealth(Stats& enemyStat){
+    return enemyStat.getHealth();
 }
 
 
