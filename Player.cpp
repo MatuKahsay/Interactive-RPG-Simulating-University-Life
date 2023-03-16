@@ -225,4 +225,3 @@ void Player::attack(Stats &playerStats, Stats &enemyStats) {
     }
 
 }
-

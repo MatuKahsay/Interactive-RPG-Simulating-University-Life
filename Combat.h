@@ -10,6 +10,9 @@ class Combat {
 
     public:
 
+
+
+
     void Fight(Player &player1, Stats &playerStats,Enemy &enemy1, Stats &enemyStats);
     void Run(Stats &playerStats);
     void Talk(Stats &playerStats);

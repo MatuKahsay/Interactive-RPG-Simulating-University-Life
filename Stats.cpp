@@ -104,5 +104,3 @@ void Stats::setCharisma(int chr) {
 int Stats::getCharisma() {
     return charisma;
 }
-
-
