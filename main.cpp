@@ -1,3 +1,4 @@
+
 // VS2022attempt.cpp : Defines the entry point for the application.
 //
 #include <vector>
@@ -11,16 +12,13 @@
 #include "Character.h"
 #include "Enemy.h"
 #include "GameLogic.h"
-#include "Item.h"
+#include "item.h"
 #include "Player.h"
-#include "Stats.h"
+#include "stats.h"
 #include <iostream>
 
 
 using namespace std;
-
-
-
 
 
 int main()
@@ -66,7 +64,30 @@ int main()
 		return -1;
 	}
 //-------------------------------------------------------------------------------------------------------------------------------------- stuff we need to care about is below
-	GameLogic* game = new GameLogic;
+	  Inventory inventory1(10); 
+   //inventory1.displayInventory();
+   Item item("Sword", "weapon",Stats(10, 0, 0,0,0));
+   inventory1.addItem(Item("Sword", "weapon",Stats(10, 0, 0,0,0)));
+  // inventory1.addItem(Item("Bow", "weapon"));
+  // inventory1.addItem(Item("Shield", "weapon"));
+   inventory1.displayInventory();
+
+   Enemy enemy1(Stats(5, 5, 5, 5, 5), 30);
+   enemy1.getStats().setCharisma(10);
+   enemy1.printStats();
+   cout << "Testing add item " << endl;
+   enemy1.equipItem(item); 
+   enemy1.printStats();
+   cout << "Testing removing item " << endl;
+   enemy1.unequipItem(item);
+   enemy1.printStats();
+   item.getStats().setHealth(15);
+   enemy1.equipItem(item);
+   cout << "Testing updated item" << endl;
+   enemy1.printStats();
+  
+  GameLogic* game = new GameLogic;
+>>>>>>> ff579e204c9827229f73e99663775518550bd4d5
 	game->initialize();
 	game->setCurrScene(0);
 	string currPicture = "NULL";

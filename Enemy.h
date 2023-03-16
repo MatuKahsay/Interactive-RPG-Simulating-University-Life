@@ -1,13 +1,20 @@
 #ifndef ENEMY_H
 #define ENEMY_H
-#include "stats.h"
+#include "Stats.h"
 
-class Enemy{
+
+class Enemy {
 
     private:
-        int enemyID; 
-        int health;
-        Stats enemyStats; 
+    int difficulty;
+
+    public:
+        Enemy();
+        int getDiff();
+        void setDiff(int enemyDiff);
+        void setStats(Stats &enemyStats);
+        void showStats(Stats &enemyStats);
+        void attack(Stats &playerStats, Stats &enemyStats);
 
     public: 
         Enemy(const Stats& stat, int ID); 
@@ -17,10 +24,4 @@ class Enemy{
         const Stats& getStats() const;  
 
 };
-
-
-
-
-
-
-#endif 
+#endif

@@ -164,10 +164,10 @@ void display::UpdateCheckStats(GLuint my_image_texture, int my_image_width, int 
 	ImGui::SameLine();
 	string tCharisma = to_string(player->getCharisma());
 	displayText(tCharisma);
-
 	if (ImGui::Button("Continue")) {
 		game->setCurrScene(game->getNextScene());
 	}
+
 }
 
 void display::displayText(string text)
@@ -176,6 +176,7 @@ void display::displayText(string text)
 	ImGui::Text(cText);
 }
 
+<<<<<<< HEAD
 void display::UpdateTravel(GLuint my_image_texture, int my_image_width, int my_image_height, scene*& currScene, GameLogic* game, Player*& player)
 {
 	displayText("Travelling to next destination...");
@@ -253,6 +254,7 @@ void display::UpdateGlasgow(GLuint my_image_texture, int my_image_width, int my_
 
 
 //Update function finds which scene we are trying to display and calls the appropriate UpdateXXX function
+
 
 void display::Update(GLuint &my_image_texture, int &my_image_width, int &my_image_height, scene* &currScene, string &currPicture, GameLogic* game, Player* &player)	{
 	//render your GUI
