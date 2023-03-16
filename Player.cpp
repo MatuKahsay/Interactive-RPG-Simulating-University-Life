@@ -225,3 +225,21 @@ void Player::attack(Stats &playerStats, Stats &enemyStats) {
     }
 
 }
+
+void Player::equipItem(Stats &playerStats, Item& item, Inventory & itemInv) {
+    playerStats.setHealth(playerStats.getHealth() + item.getStats().getHealth());
+    playerStats.setIntelligence(playerStats.getIntelligence() + item.getStats().getIntelligence());
+    playerStats.setStrength(playerStats.getStrength() + item.getStats().getStrength());
+    playerStats.setStamina(playerStats.getStamina() + item.getStats().getStamina());
+    playerStats.setCharisma(playerStats.getCharisma() + item.getStats().getCharisma());
+
+    // for (int i = 0; i < itemInv.)
+}
+
+void Player::unequipItem(Stats &playerStats, Item& item){
+    playerStats.setHealth(playerStats.getHealth() - item.getStats().getHealth());
+    playerStats.setIntelligence(playerStats.getIntelligence() - item.getStats().getIntelligence());
+    playerStats.setStrength(playerStats.getStrength() - item.getStats().getStrength());
+    playerStats.setStamina(playerStats.getStamina() - item.getStats().getStamina());
+    playerStats.setCharisma(playerStats.getCharisma() - item.getStats().getCharisma());
+}

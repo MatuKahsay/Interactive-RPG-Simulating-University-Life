@@ -3,6 +3,8 @@
 #include "Action.h"
 #include "Stats.h"
 #include "Combat.h"
+#include "Item.h"
+#include "Inventory.h"
 
 #include <iostream>
 #include <random>
@@ -36,66 +38,101 @@ int main() {
 
     enemy1.showStats(enemyStats);
 
-    cout << endl;
+    // cout << endl;
 
-    Combat combat;
+    // Combat combat;
 
-    Action action;
+    // Action action;
 
-    combat.Fight(player1, playerStats, enemy1, enemyStats);
+    // combat.Fight(player1, playerStats, enemy1, enemyStats);
 
-    cout << endl;
+    // cout << endl;
 
-    player1.showStats(playerStats);
+    // player1.showStats(playerStats);
 
-    cout << endl;
+    // cout << endl;
 
-    enemy1.showStats(enemyStats);
+    // enemy1.showStats(enemyStats);
 
-    cout << endl;
+    // cout << endl;
 
-    combat.Run(playerStats);
+    // combat.Run(playerStats);
 
-    cout << endl;
+    // cout << endl;
 
-    combat.Talk(playerStats);
+    // combat.Talk(playerStats);
 
-    cout << endl;
+    // cout << endl;
 
-    combat.Examine(playerStats);
+    // combat.Examine(playerStats);
 
-    cout << endl;
+    // cout << endl;
 
-    action.goToParty(playerStats);
+    // action.goToParty(playerStats);
 
-    cout << endl;
+    // cout << endl;
 
-    player1.showStats(playerStats);
+    // player1.showStats(playerStats);
 
-    cout << endl;
+    // cout << endl;
 
-    action.studyAtLibrary(playerStats);
+    // action.studyAtLibrary(playerStats);
 
-    cout << endl;
+    // cout << endl;
 
-    player1.showStats(playerStats);
+    // player1.showStats(playerStats);
 
-    cout << endl;
+    // cout << endl;
 
 
-    action.workoutAtSRC(playerStats);
+    // action.workoutAtSRC(playerStats);
 
-    cout << endl;
+    // cout << endl;
 
     
 
-    action.eatAtGlassgow(playerStats);
+    // action.eatAtGlassgow(playerStats);
 
-    cout << endl;
+    // cout << endl;
+
+    // player1.showStats(playerStats);
+
+    // cout << endl;
+
+
+    Inventory firstInv(20);
+
+    Stats itemStats;
+
+    int changehealht = itemStats.getStrength() + 10;
+
+    itemStats.setStrength(changehealht);
+
+    Item firstItem("pencil", "iq", itemStats);
+
+    firstInv.addItem(firstItem);
+
+    firstInv.displayInventory();
 
     player1.showStats(playerStats);
 
     cout << endl;
+
+    player1.equipItem(playerStats, firstItem);
+
+    cout << endl;
+
+
+    player1.showStats(playerStats);
+
+    cout << endl;
+
+    firstItem.getStats();
+
+
+
+
+
 
 
 
