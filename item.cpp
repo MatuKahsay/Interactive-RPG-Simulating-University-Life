@@ -1,9 +1,12 @@
 #include "item.h"
+#include "Stats.h"
 
 
-Item::Item(string name, string ID){
+Item::Item(string name, string ID, const Stats& itemStat){
     itemName = name;
     itemID = ID;
+    itemStats = itemStat;
+    
 }
 
 void Item::setName(string name){
@@ -20,6 +23,10 @@ void Item::setID(string ID){
 
 string Item::getID() const {
     return itemID;
+}
+
+Stats& Item::getStats() {
+    return itemStats;
 }
 
 

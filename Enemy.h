@@ -1,6 +1,11 @@
 #ifndef ENEMY_H
 #define ENEMY_H
 #include "stats.h"
+#include "item.h"
+// #include "Player.h"
+
+#include <iostream>
+
 
 class Enemy{
 
@@ -11,7 +16,12 @@ class Enemy{
 
     public: 
         Enemy(const Stats& stat, int ID); 
+        void equipItem(Item& item);
+        void unequipItem(Item& item);
         void attack();
+        Stats& getStats();  
+        void printStats();
+        // void battle(Player& player, Enemy& enemy);
         int getStrength(Stats& stats);
         int getHealth(Stats& stats);
         const Stats& getStats() const;  
