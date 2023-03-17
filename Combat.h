@@ -2,7 +2,7 @@
 #define COMBAT_HPP
 #include "Player.h"
 #include "Enemy.h"
-#include "stats.h"
+#include "Stats.h"
 #include <iostream>
 
 
