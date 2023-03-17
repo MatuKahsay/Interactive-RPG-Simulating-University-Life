@@ -1,28 +1,26 @@
-#ifndef PLAYER_HPP
-#define PLAYER_HPP
+#ifndef PLAYER_H
+#define PLAYER_H
 #include <iostream>
-#include "Character.h"
+#include "Stats.h"
+
+
 
 using namespace std;
 
-class Player: public Character{
+class Player {
 
-    protected:
+    private:
     string major;
-    int health;
-    int strength;
-    int intelligence;
-    int stamina;
-    int charisma;
 
     public:
-    Player(int health,  int strength, int intelligence, int stamina, int charisma, string major);
+    Player();
     string getMajor();
     void setMajor(string major);
-    void setStats();
+    void setStats(Stats &playerStats);
+    void showStats(Stats &playerStats);
+    void attack(Stats &playerStats, Stats &enemyStats);
+
 
     
-
-
 };
 #endif
