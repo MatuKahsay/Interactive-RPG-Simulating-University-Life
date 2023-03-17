@@ -133,5 +133,4 @@ The player class will contain all of the information of the player. That starts 
  ## Installation/Usage
  > Instructions on installing and running your application
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
- 
+We have taken a thorough approach to ensure the validity and functionaility of this project by designing unit tests for the classes involved. The majority of functions within each class have undergone testing using the googletest submodule.
