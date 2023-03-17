@@ -1,8 +1,7 @@
-CMakeFiles/runAllTests.dir/Action.cpp.o: \
- /class/classes/svo025/final-project-f1-d1-rank-1-team/Action.cpp \
+CMakeFiles/runAllTests.dir/Item.cpp.o: \
+ /class/classes/svo025/final-project-f1-d1-rank-1-team/Item.cpp \
  /usr/include/stdc-predef.h \
- /class/classes/svo025/final-project-f1-d1-rank-1-team/Action.h \
- /class/classes/svo025/final-project-f1-d1-rank-1-team/Player.h \
+ /class/classes/svo025/final-project-f1-d1-rank-1-team/Item.h \
  /usr/include/c++/8/iostream \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -113,23 +112,9 @@ CMakeFiles/runAllTests.dir/Action.cpp.o: \
  /usr/include/c++/8/bits/locale_facets.tcc \
  /usr/include/c++/8/bits/basic_ios.tcc \
  /usr/include/c++/8/bits/ostream.tcc /usr/include/c++/8/istream \
- /usr/include/c++/8/bits/istream.tcc \
- /class/classes/svo025/final-project-f1-d1-rank-1-team/Stats.h \
- /class/classes/svo025/final-project-f1-d1-rank-1-team/Item.h \
- /usr/include/c++/8/vector /usr/include/c++/8/bits/stl_construct.h \
+ /usr/include/c++/8/bits/istream.tcc /usr/include/c++/8/vector \
+ /usr/include/c++/8/bits/stl_construct.h \
  /usr/include/c++/8/bits/stl_uninitialized.h \
  /usr/include/c++/8/bits/stl_vector.h \
  /usr/include/c++/8/bits/stl_bvector.h /usr/include/c++/8/bits/vector.tcc \
- /class/classes/svo025/final-project-f1-d1-rank-1-team/Enemy.h \
- /usr/include/c++/8/random /usr/include/c++/8/cmath /usr/include/math.h \
- /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
- /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
- /usr/include/bits/fp-fast.h \
- /usr/include/bits/mathcalls-helper-functions.h \
- /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
- /usr/include/bits/iscanonical.h /usr/include/c++/8/limits \
- /usr/include/c++/8/bits/random.h \
- /usr/include/c++/8/bits/uniform_int_dist.h \
- /usr/include/c++/8/x86_64-redhat-linux/bits/opt_random.h \
- /usr/include/c++/8/bits/random.tcc /usr/include/c++/8/numeric \
- /usr/include/c++/8/bits/stl_numeric.h
+ /class/classes/svo025/final-project-f1-d1-rank-1-team/Stats.h

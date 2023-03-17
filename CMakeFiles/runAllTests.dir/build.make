@@ -125,12 +125,57 @@ CMakeFiles/runAllTests.dir/Enemy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runAllTests.dir/Enemy.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /class/classes/svo025/final-project-f1-d1-rank-1-team/Enemy.cpp -o CMakeFiles/runAllTests.dir/Enemy.cpp.s
 
+CMakeFiles/runAllTests.dir/Player.cpp.o: CMakeFiles/runAllTests.dir/flags.make
+CMakeFiles/runAllTests.dir/Player.cpp.o: Player.cpp
+CMakeFiles/runAllTests.dir/Player.cpp.o: CMakeFiles/runAllTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/svo025/final-project-f1-d1-rank-1-team/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/runAllTests.dir/Player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runAllTests.dir/Player.cpp.o -MF CMakeFiles/runAllTests.dir/Player.cpp.o.d -o CMakeFiles/runAllTests.dir/Player.cpp.o -c /class/classes/svo025/final-project-f1-d1-rank-1-team/Player.cpp
+
+CMakeFiles/runAllTests.dir/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runAllTests.dir/Player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /class/classes/svo025/final-project-f1-d1-rank-1-team/Player.cpp > CMakeFiles/runAllTests.dir/Player.cpp.i
+
+CMakeFiles/runAllTests.dir/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runAllTests.dir/Player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /class/classes/svo025/final-project-f1-d1-rank-1-team/Player.cpp -o CMakeFiles/runAllTests.dir/Player.cpp.s
+
+CMakeFiles/runAllTests.dir/Item.cpp.o: CMakeFiles/runAllTests.dir/flags.make
+CMakeFiles/runAllTests.dir/Item.cpp.o: Item.cpp
+CMakeFiles/runAllTests.dir/Item.cpp.o: CMakeFiles/runAllTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/svo025/final-project-f1-d1-rank-1-team/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/runAllTests.dir/Item.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runAllTests.dir/Item.cpp.o -MF CMakeFiles/runAllTests.dir/Item.cpp.o.d -o CMakeFiles/runAllTests.dir/Item.cpp.o -c /class/classes/svo025/final-project-f1-d1-rank-1-team/Item.cpp
+
+CMakeFiles/runAllTests.dir/Item.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runAllTests.dir/Item.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /class/classes/svo025/final-project-f1-d1-rank-1-team/Item.cpp > CMakeFiles/runAllTests.dir/Item.cpp.i
+
+CMakeFiles/runAllTests.dir/Item.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runAllTests.dir/Item.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /class/classes/svo025/final-project-f1-d1-rank-1-team/Item.cpp -o CMakeFiles/runAllTests.dir/Item.cpp.s
+
+CMakeFiles/runAllTests.dir/inventory.cpp.o: CMakeFiles/runAllTests.dir/flags.make
+CMakeFiles/runAllTests.dir/inventory.cpp.o: inventory.cpp
+CMakeFiles/runAllTests.dir/inventory.cpp.o: CMakeFiles/runAllTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/svo025/final-project-f1-d1-rank-1-team/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/runAllTests.dir/inventory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runAllTests.dir/inventory.cpp.o -MF CMakeFiles/runAllTests.dir/inventory.cpp.o.d -o CMakeFiles/runAllTests.dir/inventory.cpp.o -c /class/classes/svo025/final-project-f1-d1-rank-1-team/inventory.cpp
+
+CMakeFiles/runAllTests.dir/inventory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runAllTests.dir/inventory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /class/classes/svo025/final-project-f1-d1-rank-1-team/inventory.cpp > CMakeFiles/runAllTests.dir/inventory.cpp.i
+
+CMakeFiles/runAllTests.dir/inventory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runAllTests.dir/inventory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /class/classes/svo025/final-project-f1-d1-rank-1-team/inventory.cpp -o CMakeFiles/runAllTests.dir/inventory.cpp.s
+
 # Object files for target runAllTests
 runAllTests_OBJECTS = \
 "CMakeFiles/runAllTests.dir/tests.cpp.o" \
 "CMakeFiles/runAllTests.dir/Action.cpp.o" \
 "CMakeFiles/runAllTests.dir/Stats.cpp.o" \
-"CMakeFiles/runAllTests.dir/Enemy.cpp.o"
+"CMakeFiles/runAllTests.dir/Enemy.cpp.o" \
+"CMakeFiles/runAllTests.dir/Player.cpp.o" \
+"CMakeFiles/runAllTests.dir/Item.cpp.o" \
+"CMakeFiles/runAllTests.dir/inventory.cpp.o"
 
 # External object files for target runAllTests
 runAllTests_EXTERNAL_OBJECTS =
@@ -139,13 +184,16 @@ testfolder/runAllTests: CMakeFiles/runAllTests.dir/tests.cpp.o
 testfolder/runAllTests: CMakeFiles/runAllTests.dir/Action.cpp.o
 testfolder/runAllTests: CMakeFiles/runAllTests.dir/Stats.cpp.o
 testfolder/runAllTests: CMakeFiles/runAllTests.dir/Enemy.cpp.o
+testfolder/runAllTests: CMakeFiles/runAllTests.dir/Player.cpp.o
+testfolder/runAllTests: CMakeFiles/runAllTests.dir/Item.cpp.o
+testfolder/runAllTests: CMakeFiles/runAllTests.dir/inventory.cpp.o
 testfolder/runAllTests: CMakeFiles/runAllTests.dir/build.make
 testfolder/runAllTests: lib/libgmock.a
 testfolder/runAllTests: lib/libgtest.a
 testfolder/runAllTests: lib/libgtest_main.a
 testfolder/runAllTests: lib/libgtest.a
 testfolder/runAllTests: CMakeFiles/runAllTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/class/classes/svo025/final-project-f1-d1-rank-1-team/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable testfolder/runAllTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/class/classes/svo025/final-project-f1-d1-rank-1-team/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable testfolder/runAllTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runAllTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

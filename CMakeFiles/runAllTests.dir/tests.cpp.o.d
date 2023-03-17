@@ -235,5 +235,6 @@ CMakeFiles/runAllTests.dir/tests.cpp.o: \
  /class/classes/svo025/final-project-f1-d1-rank-1-team/googletest/googlemock/include/gmock/gmock-nice-strict.h \
  /class/classes/svo025/final-project-f1-d1-rank-1-team/Player.h \
  /class/classes/svo025/final-project-f1-d1-rank-1-team/Stats.h \
+ /class/classes/svo025/final-project-f1-d1-rank-1-team/Item.h \
  /class/classes/svo025/final-project-f1-d1-rank-1-team/Action.h \
  /class/classes/svo025/final-project-f1-d1-rank-1-team/Enemy.h

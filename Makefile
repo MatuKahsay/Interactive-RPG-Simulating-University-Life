@@ -274,6 +274,54 @@ Enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/Enemy.cpp.s
 .PHONY : Enemy.cpp.s
 
+Item.o: Item.cpp.o
+.PHONY : Item.o
+
+# target to build an object file
+Item.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/Item.cpp.o
+.PHONY : Item.cpp.o
+
+Item.i: Item.cpp.i
+.PHONY : Item.i
+
+# target to preprocess a source file
+Item.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/Item.cpp.i
+.PHONY : Item.cpp.i
+
+Item.s: Item.cpp.s
+.PHONY : Item.s
+
+# target to generate assembly for a file
+Item.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/Item.cpp.s
+.PHONY : Item.cpp.s
+
+Player.o: Player.cpp.o
+.PHONY : Player.o
+
+# target to build an object file
+Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/Player.cpp.o
+.PHONY : Player.cpp.o
+
+Player.i: Player.cpp.i
+.PHONY : Player.i
+
+# target to preprocess a source file
+Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/Player.cpp.i
+.PHONY : Player.cpp.i
+
+Player.s: Player.cpp.s
+.PHONY : Player.s
+
+# target to generate assembly for a file
+Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/Player.cpp.s
+.PHONY : Player.cpp.s
+
 Stats.o: Stats.cpp.o
 .PHONY : Stats.o
 
@@ -297,6 +345,30 @@ Stats.s: Stats.cpp.s
 Stats.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/Stats.cpp.s
 .PHONY : Stats.cpp.s
+
+inventory.o: inventory.cpp.o
+.PHONY : inventory.o
+
+# target to build an object file
+inventory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/inventory.cpp.o
+.PHONY : inventory.cpp.o
+
+inventory.i: inventory.cpp.i
+.PHONY : inventory.i
+
+# target to preprocess a source file
+inventory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/inventory.cpp.i
+.PHONY : inventory.cpp.i
+
+inventory.s: inventory.cpp.s
+.PHONY : inventory.s
+
+# target to generate assembly for a file
+inventory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/inventory.cpp.s
+.PHONY : inventory.cpp.s
 
 tests.o: tests.cpp.o
 .PHONY : tests.o
@@ -345,9 +417,18 @@ help:
 	@echo "... Enemy.o"
 	@echo "... Enemy.i"
 	@echo "... Enemy.s"
+	@echo "... Item.o"
+	@echo "... Item.i"
+	@echo "... Item.s"
+	@echo "... Player.o"
+	@echo "... Player.i"
+	@echo "... Player.s"
 	@echo "... Stats.o"
 	@echo "... Stats.i"
 	@echo "... Stats.s"
+	@echo "... inventory.o"
+	@echo "... inventory.i"
+	@echo "... inventory.s"
 	@echo "... tests.o"
 	@echo "... tests.i"
 	@echo "... tests.s"

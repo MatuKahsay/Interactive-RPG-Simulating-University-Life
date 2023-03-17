@@ -39,16 +39,16 @@ void Stats::setStrength(int str) {
 
     if(str > 100) {
 
-        this->strength = 100;
+        strength = 100;
     }
 
     else if (str < 0) {
 
-        this->strength = 0;
+        strength = 0;
     }
 
     else {
-        this->strength = str;
+        strength = str;
     }
 
 }

@@ -136,12 +136,12 @@ CMakeFiles/runAllTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/runAllTests.dir/all: googletest/googlemock/CMakeFiles/gmock.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runAllTests.dir/build.make CMakeFiles/runAllTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/class/classes/svo025/final-project-f1-d1-rank-1-team/CMakeFiles --progress-num=9,10,11,12,13 "Built target runAllTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/class/classes/svo025/final-project-f1-d1-rank-1-team/CMakeFiles --progress-num=9,10,11,12,13,14,15,16 "Built target runAllTests"
 .PHONY : CMakeFiles/runAllTests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/runAllTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /class/classes/svo025/final-project-f1-d1-rank-1-team/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /class/classes/svo025/final-project-f1-d1-rank-1-team/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/runAllTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /class/classes/svo025/final-project-f1-d1-rank-1-team/CMakeFiles 0
 .PHONY : CMakeFiles/runAllTests.dir/rule
