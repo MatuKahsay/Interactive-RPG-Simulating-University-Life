@@ -137,6 +137,8 @@ The player class will contain all of the information of the player. That starts 
 
  ## Installation/Usage
 After downloading the repository, navigate to the path below and open the .exe file highlighted in the picture.  Follow on screen prompts to play the game.
+
+
 <img width="845" alt="Filepath" src="https://user-images.githubusercontent.com/122512856/226070525-e447768f-fea9-45d0-b415-d097d0f9e3c8.PNG">
 
  ## Testing
