@@ -120,13 +120,10 @@ The player class will contain all of the information of the player. That starts 
  
  
  > ## Final deliverable
+### Updated UML Diagram
+![CS100 UML diagram](hhttps://github.com/cs100/final-project-f1-d1-rank-1-team/blob/readme-patchFINAL/cs100finalprojectuml.png)
 
-
- > All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
- > Before the demo, you should do the following:
- > * Complete the sections below (i.e. Screenshots, Installation/Usage, Testing)
- > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Project board.
- > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
+ 
  
  ## Screenshots
  > Screenshots of the input/output after running your application
