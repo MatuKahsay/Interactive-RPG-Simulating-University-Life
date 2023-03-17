@@ -5,32 +5,14 @@
 
 using namespace std;
 
-Player::Player() {
-<<<<<<< HEAD
-    major = "";
-    health = 0;
-    strength = 0;
-    intelligence = 0;
-    stamina = 0;
-    charisma = 0;
-}
-
-Player::Player(int health, int strength, int intelligence, int stamina, int charisma, string major) {
-    this->health = health;
-    this->strength = strength;
-    this->intelligence = intelligence;
-    this->stamina = stamina;
-    this->charisma = charisma;
-    this->major = major;
-
-=======
-    // playerStats.setHealth(100);
-    this ->major = "";
->>>>>>> ff579e204c9827229f73e99663775518550bd4d5
-}
 
 void Player::setMajor(string mjr) {
     this->major = mjr;
+}
+
+Player::Player()
+{
+    this->major = "";
 }
 
 string Player::getMajor() {
@@ -73,31 +55,6 @@ void Player::setStats(Stats &playerStats) {
         playerStats.setCharisma(40);
     }
 
-}
-
-int Player::getHealth()
-{
-    return this->health;
-}
-
-int Player::getStrength()
-{
-    return this->strength;
-}
-
-int Player::getIntelligence()
-{
-    return this->intelligence;
-}
-
-int Player::getStamina()
-{
-    return this->stamina;
-}
-
-int Player::getCharisma()
-{
-    return this->charisma;
 }
 
 void Player::showStats(Stats &playerStats) {

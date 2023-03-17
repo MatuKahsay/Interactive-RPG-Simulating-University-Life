@@ -1,27 +1,20 @@
-#ifndef ENEMY_H
-#define ENEMY_H
+#pragma once
 #include "Stats.h"
+#include <string>
 
+using namespace std;
 
 class Enemy {
 
-    private:
-    int difficulty;
+private:
+    string difficulty;
 
-    public:
-        Enemy();
-        int getDiff();
-        void setDiff(int enemyDiff);
-        void setStats(Stats &enemyStats);
-        void showStats(Stats &enemyStats);
-        void attack(Stats &playerStats, Stats &enemyStats);
-
-    public: 
-        Enemy(const Stats& stat, int ID); 
-        void attack();
-        int getStrength(Stats& stats);
-        int getHealth(Stats& stats);
-        const Stats& getStats() const;  
+public:
+    Enemy();
+    string getDiff();
+    void setDiff(string difficulty);
+    void setStats(Stats& enemyStats, string difficulty);
+    void showStats(Stats& enemyStats);
+    void attack(Stats& playerStats, Stats& enemyStats);
 
 };
-#endif

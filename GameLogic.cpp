@@ -1,12 +1,9 @@
-#include "GameLogic.h"
-#include "GameLogic.h"
+#include "GameLogic.h""
 #ifndef GAMELOGIC_CPP
 #define GAMELOGIC_CPP
 
 #include <vector>
 #include "GameLogic.h"
-#include "Scene.h"
-#include "Player.h"
 
 GameLogic::GameLogic() {}
 
@@ -37,11 +34,24 @@ void GameLogic::removeScene(int index) {
 }
 
 void GameLogic::initialize() {
+    Stats cheggStats;
+    cheggStats.setIntelligence(10);
+    Item cheggSubscription = Item("Chegg Subscription", "0", cheggStats);
+    addItem(cheggSubscription);
+    addItemStats(&cheggStats);
+
+    Stats walletStats;
+    Enemy* wallet = new Enemy();
+    wallet->setStats(walletStats, "easy");
+    addEnemy(wallet);
+    addEnemyStats(walletStats);
+
+
     vector<string> introButtons{ "Play", "Quit" };
-    addScene("intro", introButtons, "C:/Users/Alex/Desktop/Alex/School/CS100/Average life of a UCR student/final-project-f1-d1-rank-1-team/images/UCR_Logo.jpg", "easy", "Welcome to The Average Life of a UCR student.  Press Play to continue or Quit to quit.", "t2", "t3");
+    addScene("intro", introButtons, "C:/Users/zan/Desktop/School/CS100/final-project-f1-d1-rank1-team/images/UCR_Logo.jpg", "easy", "Welcome to The Average Life of a UCR student.  Press Play to continue or Quit to quit.", "t2", "t3");
 
     vector<string> testButtons{ "hi" };
-    addScene("test", testButtons, "C:/Users/Alex/Desktop/Alex/School/CS100/Average life of a UCR student/final-project-f1-d1-rank-1-team/images/IMG_6807.jpg", "hard", "t1", "t2", "t3");
+    addScene("test", testButtons, "C:/Users/zan/Desktop/School/CS100/final-project-f1-d1-rank1-team/images/IMG_6807.jpg", "hard", "t1", "t2", "t3");
 
     vector<string> majorButtons{ "Engineering", "Business", "Health", "Humanities" };
     addScene("majorSelect", majorButtons, "NULL", "easy", "", "", "");
@@ -53,19 +63,37 @@ void GameLogic::initialize() {
     addScene("Traveling", travelButtons, "NULL", "easy", "", "", "");
 
     vector<string> hubButtons{ "Go to the SRC (gym)", "Go to a party", "Study at the Library", "Eat at Glasgow", "Go to the hospital" };
-    addScene("Hub", hubButtons, "C:/Users/Alex/Desktop/Alex/School/CS100/Average life of a UCR student/final-project-f1-d1-rank-1-team/images/UCR_Hub.jpg", "easy", "", "", "");
+    addScene("Hub", hubButtons, "C:/Users/zan/Desktop/School/CS100/final-project-f1-d1-rank1-team/images/UCR_Hub.jpg", "easy", "", "", "");
 
     vector<string> srcButtons{ "Continue" };
-    addScene("SRC", srcButtons, "C:/Users/Alex/Desktop/Alex/School/CS100/Average life of a UCR student/final-project-f1-d1-rank-1-team/images/UCR_SRC.jpg", "easy", "", "", "");
+    addScene("SRC", srcButtons, "C:/Users/zan/Desktop/School/CS100/final-project-f1-d1-rank1-team/images/UCR_SRC.jpg", "easy", "", "", "");
 
     vector<string> partyButtons{ "Continue" };
-    addScene("Party", partyButtons, "C:/Users/Alex/Desktop/Alex/School/CS100/Average life of a UCR student/final-project-f1-d1-rank-1-team/images/UCR_Party.jpg", "easy", "", "", "");
+    addScene("Party", partyButtons, "C:/Users/zan/Desktop/School/CS100/final-project-f1-d1-rank1-team/images/UCR_Party.jpg", "easy", "", "", "");
 
     vector<string> libraryButtons{ "Continue" };
-    addScene("Library", libraryButtons, "C:/Users/Alex/Desktop/Alex/School/CS100/Average life of a UCR student/final-project-f1-d1-rank-1-team/images/UCR_Library.jpg", "easy", "", "", "");
+    addScene("Library", libraryButtons, "C:/Users/zan/Desktop/School/CS100/final-project-f1-d1-rank1-team/images/UCR_Library.jpg", "easy", "", "", "");
 
     vector<string> glasgowButtons{ "Continue" };
-    addScene("Glasgow", glasgowButtons, "C:/Users/Alex/Desktop/Alex/School/CS100/Average life of a UCR student/final-project-f1-d1-rank-1-team/images/UCR_Glasgow.jpg", "easy", "", "", "");
+    addScene("Glasgow", glasgowButtons, "C:/Users/zan/Desktop/School/CS100/final-project-f1-d1-rank1-team/images/UCR_Glasgow.jpg", "easy", "", "", "");
+
+    vector<string> whereButtons{ "Student Success Center", "Physics Building", "Winston Chung Hall"};
+    addScene("Where", whereButtons, "NULL", "easy", "", "", "");
+
+    vector<string> physicsButtons{ "Fight", "Run", "Talk", "Examine", "Check Your Stats"};
+    addScene("Physics", physicsButtons, "C:/Users/zan/Desktop/School/CS100/final-project-f1-d1-rank1-team/images/IMG_6807.jpg", "easy", "", "", "");
+
+    vector<string> physicsFightButtons{ "" };
+    addScene("PhysicsFight", physicsFightButtons, "C:/Users/zan/Desktop/School/CS100/final-project-f1-d1-rank1-team/images/IMG_6807.jpg", "easy", "", "", "");
+
+    vector<string> physicsItemButtons{ "" };
+    addScene("PhysicsItem", physicsItemButtons, "C:/Users/zan/Desktop/School/CS100/final-project-f1-d1-rank1-team/images/Chegg-Logo.png", "easy", "", "", "");
+
+    vector<string> physicsRunButtons{ "" };
+    addScene("PhysicsRun", physicsRunButtons, "C:/Users/zan/Desktop/School/CS100/final-project-f1-d1-rank1-team/images/Chegg-Logo.png", "easy", "", "", "");
+
+    cout << "vecSize " << sceneList.size() << endl;
+
 }
 
 void GameLogic::clearScenes() {
@@ -96,6 +124,51 @@ int GameLogic::getNextScene()
 void GameLogic::setNextScene(int tarScene)
 {
     this->nextScene = tarScene;
+}
+
+string GameLogic::getCurrSceneDiff()
+{
+    return currScene->difficulty;
+}
+
+void GameLogic::addEnemy(Enemy* enemy)
+{
+    enemyList.push_back(enemy);
+}
+
+Enemy* GameLogic::getEnemy(int tarEnemy)
+{
+    return enemyList.at(tarEnemy);
+}
+
+void GameLogic::addEnemyStats(Stats enemyStat)
+{
+    this->enemyStats.push_back(&enemyStat);
+}
+
+Stats GameLogic::getEnemyStats(int tarStats)
+{
+    return *enemyStats.at(tarStats);
+}
+
+void GameLogic::addItem(Item tarItem)
+{
+    playerInventory.addItem(tarItem);
+}
+
+Item GameLogic::getItem(int tarItem)
+{
+    return playerInventory.items.at(tarItem);
+}
+
+void GameLogic::addItemStats(Stats* itemStat)
+{
+    itemStats.push_back(itemStat);
+}
+
+Stats GameLogic::getItemStats(int tarStats)
+{
+    return *itemStats.at(tarStats);
 }
 
 #endif
