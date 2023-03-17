@@ -126,7 +126,15 @@ The player class will contain all of the information of the player. That starts 
  
  
  ## Screenshots
- > Screenshots of the input/output after running your application
+<img width="650" alt="IntroScene" src="https://user-images.githubusercontent.com/122512856/226069928-5dd7db40-b656-4444-aa0b-b3cfcc52a105.PNG">
+<img width="654" alt="SelectMajor" src="https://user-images.githubusercontent.com/122512856/226069949-c9429008-7bd9-4f60-93b6-1cebc313d90f.PNG">
+<img width="649" alt="CheckStats" src="https://user-images.githubusercontent.com/122512856/226069968-eb408288-4ead-4b3e-8191-0a423cec2b22.PNG">
+<img width="652" alt="HUB" src="https://user-images.githubusercontent.com/122512856/226070059-3b7fc9fe-3e52-4734-b576-5962611ecab2.PNG">
+<img width="653" alt="Party" src="https://user-images.githubusercontent.com/122512856/226070091-86cb79fe-9024-490d-a074-f51ad814c073.PNG">
+<img width="653" alt="Fight" src="https://user-images.githubusercontent.com/122512856/226070176-ea29759b-3b1e-48db-aa0b-50932035e162.PNG">
+<img width="652" alt="Victory" src="https://user-images.githubusercontent.com/122512856/226070219-73d5dada-56da-4976-bf0d-8b33d82a9ac1.PNG">
+<img width="656" alt="Reward" src="https://user-images.githubusercontent.com/122512856/226070234-0e36f8bb-0541-46a9-9569-88abe2b12cf2.PNG">
+
  ## Installation/Usage
  > Instructions on installing and running your application
  ## Testing
