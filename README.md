@@ -136,6 +136,8 @@ The player class will contain all of the information of the player. That starts 
 <img width="656" alt="Reward" src="https://user-images.githubusercontent.com/122512856/226070234-0e36f8bb-0541-46a9-9569-88abe2b12cf2.PNG">
 
  ## Installation/Usage
- > Instructions on installing and running your application
+After downloading the repository, navigate to the path below and open the .exe file highlighted in the picture.  Follow on screen prompts to play the game.
+<img width="845" alt="Filepath" src="https://user-images.githubusercontent.com/122512856/226070525-e447768f-fea9-45d0-b415-d097d0f9e3c8.PNG">
+
  ## Testing
 We have taken a thorough approach to ensure the validity and functionaility of this project by designing unit tests for the classes involved. The majority of functions within each class have undergone testing using the googletest submodule.
