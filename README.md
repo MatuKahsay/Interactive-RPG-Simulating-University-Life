@@ -121,7 +121,7 @@ The player class will contain all of the information of the player. That starts 
  
  > ## Final deliverable
 ### Updated UML Diagram
-![CS100 UML diagram](hhttps://github.com/cs100/final-project-f1-d1-rank-1-team/blob/readme-patchFINAL/cs100finalprojectuml.png)
+![CS100 UML diagram](https://github.com/cs100/final-project-f1-d1-rank-1-team/blob/readme-patchFINAL/cs100finalprojectuml.png)
 
  
  
