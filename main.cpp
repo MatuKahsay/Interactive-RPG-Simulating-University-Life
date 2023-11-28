@@ -1,13 +1,15 @@
+
 // VS2022attempt.cpp : Defines the entry point for the application.
 //
 #include <vector>
 #include <string>
+#include "glad/glad.h"
+#define GLFW_INCLUDE_NONE
+#include "GLFW/glfw3.h"
 #include "scene.h"
 #include "display.h"
-#include "glad/glad.h"
-#include "GLFW/glfw3.h"
 #include "stb_image.h"
-#include "inventory.h"
+#include "Inventory.h"
 #include "Character.h"
 #include "Enemy.h"
 #include "GameLogic.h"
@@ -18,9 +20,6 @@
 
 
 using namespace std;
-
-
-
 
 
 int main()
@@ -66,28 +65,7 @@ int main()
 		return -1;
 	}
 //-------------------------------------------------------------------------------------------------------------------------------------- stuff we need to care about is below
-	  Inventory inventory1(10); 
-   //inventory1.displayInventory();
-   Item item("Sword", "weapon",Stats(10, 0, 0,0,0));
-   inventory1.addItem(Item("Sword", "weapon",Stats(10, 0, 0,0,0)));
-  // inventory1.addItem(Item("Bow", "weapon"));
-  // inventory1.addItem(Item("Shield", "weapon"));
-   inventory1.displayInventory();
 
-   Enemy enemy1(Stats(5, 5, 5, 5, 5), 30);
-   enemy1.getStats().setCharisma(10);
-   enemy1.printStats();
-   cout << "Testing add item " << endl;
-   enemy1.equipItem(item); 
-   enemy1.printStats();
-   cout << "Testing removing item " << endl;
-   enemy1.unequipItem(item);
-   enemy1.printStats();
-   item.getStats().setHealth(15);
-   enemy1.equipItem(item);
-   cout << "Testing updated item" << endl;
-   enemy1.printStats();
-  
   GameLogic* game = new GameLogic;
 	game->initialize();
 	game->setCurrScene(0);
@@ -95,16 +73,17 @@ int main()
 	GLuint my_image_texture = 0;
 	int my_image_width = 0;
 	int my_image_height = 0;
-	Player* player = new Player;
+	Player* player = new Player();
+	Stats playerStats = Stats();
 	//
 	while (!glfwWindowShouldClose(window)) {
 		glfwPollEvents();
 		scene* currScene = game->getCurrScene();
 		cout << currScene->sceneType << endl;
-		myimgui.Update(my_image_texture, my_image_width, my_image_height, currScene, currPicture, game, player);
+		myimgui.Update(my_image_texture, my_image_width, my_image_height, currScene, currPicture, game, player, playerStats);
 		myimgui.Render();
 		glfwSwapBuffers(window);
 	}
 	myimgui.Shutdown();
-	return 0;
+	return 0; 
 }

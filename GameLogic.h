@@ -1,8 +1,9 @@
-#ifndef GAMELOGIC_H
-#define GAMELOGIC_H
+#pragma once
 #include <vector>
 #include "scene.h"
 #include "Player.h"
+#include "Enemy.h"
+#include "Inventory.h"
 
 using namespace std;
 
@@ -11,6 +12,11 @@ class GameLogic  {
         vector<scene*> sceneList;
         Player Protagonist;
         scene* currScene;
+        int nextScene;
+        vector<Enemy*> enemyList;
+        vector<Stats*> enemyStats;
+        vector<Stats*> itemStats;
+        Inventory playerInventory = Inventory(20, 0);
     public:
         GameLogic();
         GameLogic(vector<scene*> newList, Player newPlayer);
@@ -22,6 +28,15 @@ class GameLogic  {
         scene* getScene(int);
         scene* getCurrScene();
         void setCurrScene(int tarScene);
+        int getNextScene();
+        void setNextScene(int tarScene);
+        string getCurrSceneDiff();
+        void addEnemy(Enemy* enemy);
+        Enemy* getEnemy(int tarEnemy);
+        void addEnemyStats(Stats enemyStats);
+        Stats getEnemyStats(int tarStats);
+        void addItem(Item tarItem);
+        Item getItem(int tarItem);
+        void addItemStats(Stats* itemStats);
+        Stats getItemStats(int tarStats);
 };
-
-#endif

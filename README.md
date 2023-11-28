@@ -120,18 +120,26 @@ The player class will contain all of the information of the player. That starts 
  
  
  > ## Final deliverable
+### Updated UML Diagram
+<img width="579" alt="Screenshot 2023-03-17 at 16 43 58" src="https://user-images.githubusercontent.com/108632333/226070368-0f537995-093b-4d40-842c-f9344a92f178.png">
 
-
- > All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
- > Before the demo, you should do the following:
- > * Complete the sections below (i.e. Screenshots, Installation/Usage, Testing)
- > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Project board.
- > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
+ 
  
  ## Screenshots
- > Screenshots of the input/output after running your application
+<img width="650" alt="IntroScene" src="https://user-images.githubusercontent.com/122512856/226069928-5dd7db40-b656-4444-aa0b-b3cfcc52a105.PNG">
+<img width="654" alt="SelectMajor" src="https://user-images.githubusercontent.com/122512856/226069949-c9429008-7bd9-4f60-93b6-1cebc313d90f.PNG">
+<img width="649" alt="CheckStats" src="https://user-images.githubusercontent.com/122512856/226069968-eb408288-4ead-4b3e-8191-0a423cec2b22.PNG">
+<img width="652" alt="HUB" src="https://user-images.githubusercontent.com/122512856/226070059-3b7fc9fe-3e52-4734-b576-5962611ecab2.PNG">
+<img width="653" alt="Party" src="https://user-images.githubusercontent.com/122512856/226070091-86cb79fe-9024-490d-a074-f51ad814c073.PNG">
+<img width="653" alt="Fight" src="https://user-images.githubusercontent.com/122512856/226070176-ea29759b-3b1e-48db-aa0b-50932035e162.PNG">
+<img width="652" alt="Victory" src="https://user-images.githubusercontent.com/122512856/226070219-73d5dada-56da-4976-bf0d-8b33d82a9ac1.PNG">
+<img width="656" alt="Reward" src="https://user-images.githubusercontent.com/122512856/226070234-0e36f8bb-0541-46a9-9569-88abe2b12cf2.PNG">
+
  ## Installation/Usage
- > Instructions on installing and running your application
+After downloading the repository, navigate to the path below and open the .exe file highlighted in the picture.  Follow on screen prompts to play the game.
+
+
+<img width="845" alt="Filepath" src="https://user-images.githubusercontent.com/122512856/226070525-e447768f-fea9-45d0-b415-d097d0f9e3c8.PNG">
+
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
- 
+We have taken a thorough approach to ensure the validity and functionaility of this project by designing unit tests for the classes involved. The majority of functions within each class have undergone testing using the googletest submodule.
