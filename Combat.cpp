@@ -9,10 +9,12 @@ void Combat::Fight(Player &player1, Stats &playerStats,Enemy &enemy1, Stats &ene
      
      while((playerStats.getHealth() > 0) || (enemyStats.getHealth() > 0)) {
         player1.attack(playerStats, enemyStats);
+
         if(enemyStats.getHealth() <= 0) {
             break;
         }
         enemy1.attack(playerStats, enemyStats);
+
         if(playerStats.getHealth() <= 0) {
             break;
         }
@@ -20,7 +22,6 @@ void Combat::Fight(Player &player1, Stats &playerStats,Enemy &enemy1, Stats &ene
 
 }
 
-bool Combat::Run(Stats &playerStats) {
 
     if(playerStats.getStamina() < 20) {
         
@@ -32,12 +33,12 @@ bool Combat::Run(Stats &playerStats) {
 
         if(prob == 10) {
              cout << "You decide to run away from the enemy and the enemy is slow to catch up, you have successfully ran away from the enemy. " << endl;
-             return true;
+
         }
 
         else {
              cout << "You try to run away from the enemy, but the enemy is to fast, so they catch up to you. You must fight the enemy. " << endl;
-             return false;
+
         }
     }
 
@@ -51,12 +52,12 @@ bool Combat::Run(Stats &playerStats) {
 
         if(prob == 5) {
             cout << "You decide to run away from the enemy and the enemy is slow to catch up, you have successfully ran away from the enemy. " << endl;
-            return true;
+
         }
 
         else {
             cout << "You try to run away from the enemy, but the enemy is to fast, so they catch up to you. You must fight the enemy. " << endl;
-            return false;
+
         }
     }
 
@@ -70,12 +71,12 @@ bool Combat::Run(Stats &playerStats) {
 
         if(prob == 5 || prob == 6) {
             cout << "You decide to run away from the enemy and the enemy is slow to catch up, you have successfully ran away from the enemy. " << endl;
-            return true;
+
         }
 
         else {
             cout << "You try to run away from the enemy, but the enemy is to fast, so they catch up to you. You must fight the enemy. " << endl;
-            return false;
+
         }
     }
 
@@ -89,12 +90,12 @@ bool Combat::Run(Stats &playerStats) {
 
         if(prob == 5 || prob == 6 || prob == 7) {
             cout << "You decide to run away from the enemy and the enemy is slow to catch up, you have successfully ran away from the enemy. " << endl;
-            return true;
+
         }
 
         else {
             cout << "You try to run away from the enemy, but the enemy is to fast, so they catch up to you. You must fight the enemy. " << endl;
-            return false;
+
         }
     }
 
@@ -108,17 +109,12 @@ bool Combat::Run(Stats &playerStats) {
 
         if(prob == 5 || prob == 6 || prob == 7 || prob == 8) {
             cout << "You decide to run away from the enemy and the enemy is slow to catch up, you have successfully ran away from the enemy. " << endl;
-            return true;
+
         }
 
         else {
             cout << "You try to run away from the enemy, but the enemy is to fast, so they catch up to you. You must fight the enemy. " << endl;
-            return false;
-        }
-    }
-}
 
-bool Combat::Talk(Stats &playerStats) {
 
     if(playerStats.getCharisma() < 20) {
         random_device rd;
@@ -129,7 +125,7 @@ bool Combat::Talk(Stats &playerStats) {
 
         if(prob == 10) {
             cout << "Successfully charmed your away out of the fight" << endl;
-            return true;
+
         }
 
         else {
@@ -205,7 +201,7 @@ bool Combat::Talk(Stats &playerStats) {
     }
 }
 
-bool Combat::Examine(Stats &playerStats) {
+
     int playerBoost = 0;
 
     if(playerStats.getIntelligence() < 20) {
@@ -220,7 +216,7 @@ bool Combat::Examine(Stats &playerStats) {
             cout << "You have examined your surroundings and have discovered a weapon to use, this boosts your strength by 10. " << endl;
             playerBoost = playerStats.getStrength() + 10;
             playerStats.setStrength(playerBoost);
-            return true;
+
         }
 
         else {
